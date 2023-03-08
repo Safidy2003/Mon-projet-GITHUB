@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css"/>
+    <title>TP BOOSTTRAP</title>
+    <script>
+        var a=3,conf=false,etat=0;
+         
+        for(var i=2 ;i<a && etat==0; i++){
+            if(a%i==0){
+                alert('le nombre '+ a +'pas premier');
+               // break;
+               etat=1;
+            }
+            else{
+                conf=true;
+            }
+        }
+        if(conf){
+            alert("Ne nombre"+   a +"est premier");
+        }
+               
+       
+    </script>    
+</head>
+<body>
+      <form>
+            <legend>
+               
+                 Login  
+              
+            </legend>
+            <div class="form-group">
+                <label for="nom">Nom:</label>
+                <input type="text" name="nom" placeholder="nom" class="form-control"/>
+            </div>      
+           <div class="form-group">
+                <label for="prenom">Prenom:</label>
+                <input type="text" name="prenom" placeholder="prenom" class="form-control"/>
+           </div>
+            <div class="form-group">
+                <label for="password">Mot de passe: </label>
+                <input type="password" name="password" placeholder="mot de passe " class="form-control"/>
+            </div>
+            
+            <button type="submit" class="btn btn-primary form-control">
+                  Envoyer
+            </button>
+      </form>
+      <table>
+         
+      </table>
+</body>
+</html>
